@@ -1,6 +1,6 @@
 <div align="center">
   <h3 align="center">Macain</h3>
-  <img align="center" src="https://raw.githubusercontent.com/algonacci/Macain/main/static/img/logo.png">
+  <img align="center" src="https://raw.githubusercontent.com/algonacci/Macain/main/static/img/logo.png" width="250">
   <p align="center">
     Question Answering System
   </p>
