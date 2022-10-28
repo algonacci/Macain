@@ -34,6 +34,8 @@ def studio():
             document_store = md.document_store(preprocessed)
             studio.pipeline = md.question_answer_pipeline(document_store)
             return render_template("studio.html")
+        else:
+            return "Upload PDF Document!"
     else:
         return "Not Allowed!"
 

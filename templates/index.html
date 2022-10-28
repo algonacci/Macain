@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Macain</title>
     <!-- Bootstrap -->
+    <link rel="stylesheet" href="/static/css/button.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -38,14 +39,29 @@
               <label for="file" class="form-label"></label>
               <input class="form-control" type="file" id="file" name="file" />
               <input
-                class="btn btn-primary mt-3"
+                class="btn btn-primary button mt-5"
                 type="submit"
                 value="Upload!"
+                id="submitForm"
               />
             </form>
           </div>
         </div>
       </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#submitForm").click(function () {
+          $(this).addClass("loader");
+          $(this).addClass("disabled");
+
+          setTimeout(function () {
+            $("#submitForm").removeClass("loader");
+          }, 60000);
+        });
+      });
+    </script>
   </body>
 </html>
